@@ -1,0 +1,28 @@
+﻿<Window x:Class="ExamenSegundoParcial.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExamenSegundoParcial"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0">1. Información Personal > 2.Contacto > 3.Información de pago</TextBlock>
+        <local:InformacionPersonal x:Name="informacionPersonal" Visibility="Collapsed"></local:InformacionPersonal>
+        <local:Contacto x:Name="contacto" Visibility="Collapsed"></local:Contacto>
+        <local:InformacionPago x:Name="informacionPago" Visibility="Collapsed"></local:InformacionPago>
+        <Button x:Name="btnSiguiente" Grid.Row="2" Grid.Column="1"  Click="btnSiguiente_Click" >Siguiente</Button>
+        <Button x:Name="btnSiguiente2" Grid.Row="2" Grid.Column="1" Visibility="Collapsed" Click="btnSiguiente2_Click">Siguiente</Button>
+        <Button x:Name="btnSiguente3" Grid.Row="2" Grid.Column="1" Visibility="Collapsed" Click="btnSiguente3_Click">Siguiente</Button>
+        <Button x:Name="btnFinalizar" Grid.Row="2" Grid.Column="1" Visibility="Collapsed" Click="btnFinalizar_Click">Siguiente</Button>
+    </Grid>
+</Window>
